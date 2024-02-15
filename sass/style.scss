@@ -27,11 +27,8 @@ p {
 }
 ul,
 ol {
-<<<<<<< HEAD
-=======
 	padding: 0;
 	margin: 0;
->>>>>>> 06e6663 (fix nav)
 	list-style: none;
 }
 
@@ -119,29 +116,11 @@ $color-text: #2a254b;
 .header__nav {
 }
 
-<<<<<<< HEAD
-.header__nav-list-one {
-=======
 .header__nav-list {
->>>>>>> 06e6663 (fix nav)
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
 	padding: 20px 0;
-<<<<<<< HEAD
-	border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-}
-
-.header__nav-input-one {
-	display: inline-block;
-	opacity: 0;
-	width: 0;
-	height: 30px;
-	transition: all 0.3s;
-}
-
-.header__nav-input-one--active {
-=======
 }
 
 .header__nav-list-icon {
@@ -165,23 +144,12 @@ $color-text: #2a254b;
 }
 
 .header__nav-input--active {
->>>>>>> 06e6663 (fix nav)
 	opacity: 1;
 	width: 150px;
 	height: 30px;
 	transition: all 0.3s;
 }
 
-<<<<<<< HEAD
-.header__nav-label-one {
-	cursor: pointer;
-}
-
-.header__nav-list-two {
-	display: flex;
-	justify-content: center;
-	padding: 20px 0;
-=======
 .header__nav {
 	display: flex;
 	justify-content: space-between;
@@ -192,17 +160,12 @@ $color-text: #2a254b;
 	display: flex;
 	justify-content: center;
 	padding: 29px 0;
->>>>>>> 06e6663 (fix nav)
 	gap: 44px;
 	font-family: $font-satoshi;
 	color: #726e8d;
 }
 
-<<<<<<< HEAD
-.header__nav-link-two {
-=======
 .header__nav-link {
->>>>>>> 06e6663 (fix nav)
 	position: relative;
 	transition: all 0.3s;
 
@@ -211,11 +174,7 @@ $color-text: #2a254b;
 		display: flex;
 		position: absolute;
 		right: 0;
-<<<<<<< HEAD
-		bottom: -3px;
-=======
 		bottom: -1px;
->>>>>>> 06e6663 (fix nav)
 		width: 0;
 		height: 2px;
 		background-color: $color-text;
@@ -228,10 +187,6 @@ $color-text: #2a254b;
 			width: 100%;
 			transition: all 0.4s;
 		}
-<<<<<<< HEAD
-=======
-
->>>>>>> 06e6663 (fix nav)
 		color: $color-text;
 		transition: all 0.3s;
 	}
