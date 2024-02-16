@@ -25,6 +25,7 @@ p {
 	padding: 0;
 	margin: 0;
 }
+
 ul,
 ol {
 	padding: 0;
@@ -45,6 +46,18 @@ $font-clashDisplay: 'Clash Display', sans-serif;
 $bg-color-purple: #2a254b;
 $color-text: #2a254b;
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: $font-clashDisplay;
+}
+
+p {
+	font-family: $font-satoshi;
+}
 %titleSite {
 	font-size: 36px;
 	font-family: $font-satoshi;
@@ -233,6 +246,36 @@ $color-text: #2a254b;
 		transition: all 0.4s;
 	}
 }
+
+.makes__title {
+	font-size: 24px;
+	font-weight: 400;
+	color: $color-text;
+	margin: 80px 0 36px;
+	text-align: center;
+}
+
+.makes__list {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	gap: 22px;
+}
+
+.makes__list-item {
+	background-color: #f9f9f9;
+	width: 69%;
+	height: 192px;
+	padding: 48px;
+}
+
+.makes__list-img,
+.makes__list-title {
+	margin-bottom: 12px;
+}
+
+
+
+
 
 .footer {
 }
