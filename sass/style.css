@@ -87,9 +87,11 @@ p {
   transform: translate(-50%, -50%);
   width: 75px;
   height: 75px;
-  border: 10px solid #fff;
+  border: 10px solid rgba(249, 249, 249, 0.15);
   border-radius: 50%;
-  border-top-color: #2a254b;
+  border-top-color: #4e4d93;
+  border-bottom-color: #4e4d93;
+  filter: drop-shadow(0 0 5px #4e4d93) contrast(150%);
   animation: spin 3s infinite;
 }
 
@@ -98,12 +100,37 @@ p {
   visibility: hidden;
 }
 
+.preloader .color {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 105px;
+  height: 105px;
+  border-radius: 50%;
+  border: 5px solid rgba(249, 249, 249, 0.15);
+  border-top-color: #4e4d93;
+  border-bottom-color: #4e4d93;
+  z-index: 1;
+  filter: contrast(150%) blur(6px);
+  animation: spin2 3s infinite;
+}
+
 @keyframes spin {
   0% {
     transform: translate(-50%, -50%) rotate(0deg);
   }
   100% {
     transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+
+@keyframes spin2 {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(-360deg);
   }
 }
 
