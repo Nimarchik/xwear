@@ -12,8 +12,8 @@
 
 		<link rel="stylesheet" href="../sass/main.css" />
 
-		<script src="../js/main.js" defer></script>
 		<script src="../js/preloader.js" defer></script>
+		<script src="../js/main.js" defer></script>
 	</head>
 	<body>
 		<div id="page-preloader" class="preloader">
@@ -123,7 +123,305 @@
 
 			<main class="main">
 				<section class="top-catalog">
-					<div class="container"></div>
+					<div class="top-catalog__contain">
+						<h1 class="top-catalog__title">All products</h1>
+					</div>
+					<div class="container">
+						<div class="top-catalog__contants">
+							<div class="top-catalog__contants-filter">
+								<ul class="top-catalog__contants-filter-type">
+									<li class="top-catalog__contants-filter-type-item">
+										<h3 class="top-catalog__contants-filter-title">
+											Product type
+										</h3>
+									</li>
+									<li class="top-catalog__contants-filter-type-item">
+										<input
+											type="checkbox"
+											name=""
+											id="furniture"
+											class="top-catalog__contants-filter-checkbox"
+										/>
+										<label
+											for="furniture"
+											class="top-catalog__contants-filter-label"
+											>Furniture</label
+										>
+									</li>
+									<li class="top-catalog__contants-filter-type-item">
+										<input
+											type="checkbox"
+											name=""
+											id="homeware"
+											class="top-catalog__contants-filter-checkbox"
+										/>
+										<label
+											for="homeware"
+											class="top-catalog__contants-filter-label"
+											>Homeware</label
+										>
+									</li>
+									<li class="top-catalog__contants-filter-type-item">
+										<input
+											type="checkbox"
+											name=""
+											id="sofas"
+											class="top-catalog__contants-filter-checkbox"
+										/>
+										<label
+											for="sofas"
+											class="top-catalog__contants-filter-label"
+											>Sofas</label
+										>
+									</li>
+									<li class="top-catalog__contants-filter-type-item">
+										<input
+											type="checkbox"
+											name=""
+											id="light"
+											class="top-catalog__contants-filter-checkbox"
+										/>
+										<label
+											for="light"
+											class="top-catalog__contants-filter-label"
+											>Light fittings</label
+										>
+									</li>
+									<li class="top-catalog__contants-filter-type-item">
+										<input
+											type="checkbox"
+											name=""
+											id="accessories"
+											class="top-catalog__contants-filter-checkbox"
+										/>
+										<label
+											for="accessories"
+											class="top-catalog__contants-filter-label"
+											>Accessories</label
+										>
+									</li>
+								</ul>
+
+								<ul class="top-catalog__contants-filter-price">
+									<li class="top-catalog__contants-filter-type-item">
+										<h3 class="top-catalog__contants-filter-title">Price</h3>
+									</li>
+									<li class="top-catalog__contants-filter-type-item">
+										<input
+											type="checkbox"
+											name=""
+											id="price1"
+											value="price1"
+											data-id="price1"
+											class="top-catalog__contants-filter-checkbox"
+										/>
+										<label
+											for="price1"
+											class="top-catalog__contants-filter-label"
+											>0-100</label
+										>
+									</li>
+									<li class="top-catalog__contants-filter-type-item">
+										<input
+											type="checkbox"
+											name=""
+											id="price2"
+											value="price2"
+											data-id="price2"
+											class="top-catalog__contants-filter-checkbox"
+										/>
+										<label
+											for="price2"
+											class="top-catalog__contants-filter-label"
+											>101-250</label
+										>
+									</li>
+									<li class="top-catalog__contants-filter-type-item">
+										<input
+											type="checkbox"
+											name=""
+											id="price3"
+											value="price3"
+											data-id="price3"
+											class="top-catalog__contants-filter-checkbox"
+										/>
+										<label
+											for="price3"
+											class="top-catalog__contants-filter-label"
+											>250+</label
+										>
+									</li>
+								</ul>
+
+								<ul class="top-catalog__contants-filter-price">
+									<li class="top-catalog__contants-filter-type-item">
+										<h3 class="top-catalog__contants-filter-title">Designer</h3>
+									</li>
+									<li class="top-catalog__contants-filter-price-item">
+										<input
+											type="checkbox"
+											name=""
+											id="smith"
+											class="top-catalog__contants-filter-checkbox"
+										/>
+										<label
+											for="smith"
+											class="top-catalog__contants-filter-label"
+											>Robert Smith</label
+										>
+									</li>
+									<li class="top-catalog__contants-filter-price-item">
+										<input
+											type="checkbox"
+											name=""
+											id="gallager"
+											class="top-catalog__contants-filter-checkbox"
+										/>
+										<label
+											for="gallager"
+											class="top-catalog__contants-filter-label"
+											>Liam Gallagher</label
+										>
+									</li>
+									<li class="top-catalog__contants-filter-price-item">
+										<input
+											type="checkbox"
+											name=""
+											id="smalls"
+											class="top-catalog__contants-filter-checkbox"
+										/>
+										<label
+											for="smalls"
+											class="top-catalog__contants-filter-label"
+											>Biggie Smalls</label
+										>
+									</li>
+									<li class="top-catalog__contants-filter-price-item">
+										<input
+											type="checkbox"
+											name=""
+											id="yorke"
+											class="top-catalog__contants-filter-checkbox"
+										/>
+										<label
+											for="yorke"
+											class="top-catalog__contants-filter-label"
+											>Thom Yorke</label
+										>
+									</li>
+								</ul>
+							</div>
+
+							<div class="top-catalog__contants-list">
+								<div
+									class="top-catalog__contants-list-item"
+									data-category="price2"
+								>
+									<img
+										src="../image/Photo1.jpeg"
+										alt=""
+										class="top-catalog__contants-img"
+									/>
+									<h2 class="top-catalog__contants-title">The Dandy chair</h2>
+									<p class="top-catalog__contants-price">£250</p>
+									<a href="" class="top-catalog__contants-link">Buy</a>
+								</div>
+
+								<div
+									class="top-catalog__contants-list-item price2"
+									data-category="price2"
+								>
+									<img
+										src="../image/Photo2.jpeg"
+										alt=""
+										class="top-catalog__contants-img"
+									/>
+									<h2 class="top-catalog__contants-title">Rustic Vase Set</h2>
+									<p class="top-catalog__contants-price">£155</p>
+									<a href="" class="top-catalog__contants-link">Buy</a>
+								</div>
+								<div
+									class="top-catalog__contants-list-item price3"
+									data-category="price2"
+								>
+									<img
+										src="../image/Photo3.jpeg"
+										alt=""
+										class="top-catalog__contants-img"
+									/>
+									<h2 class="top-catalog__contants-title">The Silky Vase</h2>
+									<p class="top-catalog__contants-price">£125</p>
+									<a href="" class="top-catalog__contants-link">Buy</a>
+								</div>
+								<div
+									class="top-catalog__contants-list-item"
+									data-category="price3"
+								>
+									<img
+										src="../image/Photo4.jpeg"
+										alt=""
+										class="top-catalog__contants-img"
+									/>
+									<h2 class="top-catalog__contants-title">The Lucy Lamp</h2>
+									<p class="top-catalog__contants-price">£399</p>
+									<a href="" class="top-catalog__contants-link">Buy</a>
+								</div>
+								<div
+									class="top-catalog__contants-list-item"
+									data-category="price2"
+								>
+									<img
+										src="../image/Photo1.jpeg"
+										alt=""
+										class="top-catalog__contants-img"
+									/>
+									<h2 class="top-catalog__contants-title">The Dandy chair</h2>
+									<p class="top-catalog__contants-price">£250</p>
+									<a href="" class="top-catalog__contants-link">Buy</a>
+								</div>
+
+								<div
+									class="top-catalog__contants-list-item price2"
+									data-category="price2"
+								>
+									<img
+										src="../image/Photo2.jpeg"
+										alt=""
+										class="top-catalog__contants-img"
+									/>
+									<h2 class="top-catalog__contants-title">Rustic Vase Set</h2>
+									<p class="top-catalog__contants-price">£155</p>
+									<a href="" class="top-catalog__contants-link">Buy</a>
+								</div>
+								<div
+									class="top-catalog__contants-list-item price3"
+									data-category="price2"
+								>
+									<img
+										src="../image/Photo3.jpeg"
+										alt=""
+										class="top-catalog__contants-img"
+									/>
+									<h2 class="top-catalog__contants-title">The Silky Vase</h2>
+									<p class="top-catalog__contants-price">£125</p>
+									<a href="" class="top-catalog__contants-link">Buy</a>
+								</div>
+								<div
+									class="top-catalog__contants-list-item"
+									data-category="price3"
+								>
+									<img
+										src="../image/Photo4.jpeg"
+										alt=""
+										class="top-catalog__contants-img"
+									/>
+									<h2 class="top-catalog__contants-title">The Lucy Lamp</h2>
+									<p class="top-catalog__contants-price">£399</p>
+									<a href="" class="top-catalog__contants-link">Buy</a>
+								</div>
+							</div>
+						</div>
+					</div>
 				</section>
 			</main>
 

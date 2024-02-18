@@ -1,7 +1,77 @@
 .top-catalog {
-	background: url('../image/HeadersCatalog.jpeg') no-repeat center;
-  height: 209px;
-	background-size: cover;
 }
 
+.top-catalog__contain {
+	display: flex;
+	align-items: end;
+	background: url('../image/HeadersCatalog.jpeg') no-repeat center;
+	background-size: cover;
+	margin-bottom: 72px;
+	padding: 36px;
+	height: 173px;
+}
 
+.top-catalog__title {
+	color: #fff;
+	font-size: 36px;
+}
+
+.top-catalog__contants {
+	display: flex;
+	gap: 169px;
+}
+
+.top-catalog__contants-filter {
+	display: flex;
+	flex-direction: column;
+	gap: 48px;
+	width: 156px;
+}
+
+.top-catalog__contants-filter-checkbox {
+	display: none;
+}
+.top-catalog__contants-filter-checkbox {
+	&:checked {
+		~ .top-catalog__contants-filter-label {
+			&::before {
+				background: url(../image/check2.svg) no-repeat;
+				background-color: $bg-color-purple;
+				border-radius: 2px;
+				transition: all 0.4s;
+			}
+		}
+	}
+}
+
+.top-catalog__contants-filter-label {
+	display: flex;
+	align-items: center;
+	gap: 12px;
+	font-family: $font-satoshi;
+	color: $color-text;
+	cursor: pointer;
+
+	&::before {
+		content: '';
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 15px;
+		height: 15px;
+		border: 1px solid #dcdcdc;
+		border-radius: 2px;
+		transition: all 0.4s;
+	}
+}
+
+.top-catalog__contants-list {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 36px 22px;
+}
+
+.hidden {
+	display: none;
+	transition: all 0.4s;
+}
