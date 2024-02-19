@@ -8,6 +8,7 @@ html {
   font-weight: 400;
   font-style: normal;
   line-height: 1.4;
+  scroll-behavior: smooth;
 }
 
 *::after,
@@ -686,7 +687,17 @@ p {
   gap: 36px 22px;
 }
 
-.hidden {
-  display: none;
+.top-catalog__contants-list-item {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
   transition: all 0.4s;
+}
+
+.hidden {
+  position: absolute;
+  visibility: hidden;
+  opacity: 0;
+  transform: translateY(-100%);
+  transition: all 0.5s;
 }/*# sourceMappingURL=main.css.map */

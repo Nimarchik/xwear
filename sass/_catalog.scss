@@ -68,7 +68,18 @@
 	gap: 36px 22px;
 }
 
-.hidden {
-	display: none;
+.top-catalog__contants-list-item {
+	opacity: 1;
+	visibility: visible;
+	transform: translateY(0);
 	transition: all 0.4s;
+}
+
+.hidden {
+	// display: none;
+	position: absolute;
+	visibility: hidden;
+	opacity: 0;
+	transform: translateY(-100%);
+	transition: all 0.5s;
 }
