@@ -58,6 +58,7 @@ p {
 }
 
 .wrapper {
+  position: relative;
   display: flex;
   flex-direction: column;
   height: 100%;
@@ -168,6 +169,19 @@ p {
   align-items: center;
   padding: 20px 0;
   gap: 16px;
+}
+
+.header__nav-input {
+  border: 1px solid #2a254b;
+  padding: 0 10px;
+  outline: none;
+  border-radius: 22px;
+  transition: all 0.4s;
+}
+.header__nav-input:focus {
+  outline: 2px solid #2a254b;
+  box-shadow: 0 0 10px #2a254b;
+  transition: all 0.4s;
 }
 
 .header__nav-svg {
@@ -557,6 +571,55 @@ p {
 .footer__copyright-list {
   display: flex;
   gap: 24px;
+}
+
+.ads-modals {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(100%, -50%) translateX(-100%);
+  width: 400px;
+  height: 500px;
+  color: #f9f9f9;
+  border-radius: 22px;
+  opacity: 0;
+  visibility: hidden;
+  box-shadow: 0 0 15px #2a254b;
+  transition: all 0.4s;
+}
+.ads-modals .ads-madals__bg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: url("../image/photo-ads.jpeg") no-repeat center;
+  background-size: cover;
+  filter: blur(5px);
+}
+.ads-modals .ads-modals__content {
+  position: absolute;
+  z-index: 3;
+  padding: 50px;
+}
+.ads-modals .ads-modals__content svg {
+  width: 20px;
+  height: 20px;
+  float: right;
+}
+
+.ads-modals--show {
+  display: block;
+  transform: translate(-50%, -50%) translateX(0%);
+  opacity: 1;
+  visibility: visible;
+  transition: all 0.4s;
+}
+
+.ads-modals__content-title {
+  font-size: clamp(1rem, -4rem + 20vw, 2.25rem);
+}
+
+.ads-modals__content-text {
+  font-size: clamp(0.875rem, -0.625rem + 6vw, 1.25rem);
 }
 
 .top-catalog__contain {

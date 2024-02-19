@@ -1,12 +1,14 @@
-var svgNav = document.querySelector('.header__nav-svg')
-var inputNav = document.querySelector('.header__nav-input')
+var   svgNav         = document.querySelector('.header__nav-svg')
+var   inputNav       = document.querySelector('.header__nav-input')
+
+
+
 
 svgNav.addEventListener('click', () => {
 	inputNav.classList.toggle('header__nav-input--active')
 })
 
 const filter = document.querySelector('.top-catalog__contants-filter-price')
-
 filter.addEventListener('change', function () {
 	document.querySelectorAll('.top-catalog__contants-list-item').forEach(
 		function (n) {
