@@ -700,4 +700,201 @@ p {
   opacity: 0;
   transform: translateY(-100%);
   transition: all 0.5s;
+}
+
+.top-catalog__contants-filter-title {
+  margin-bottom: 10px;
+}
+
+.top-catalog__contants-filter-type,
+.top-catalog__contants-filter-price,
+.top-catalog__contants-filter-designer {
+  margin-bottom: 20px;
+}
+
+@media screen and (max-width: 1280px) {
+  body {
+    overflow-x: hidden;
+  }
+  .container {
+    width: 90%;
+  }
+  .collection__list {
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 768px) {
+  .benefits__form-btn {
+    font-size: 14px;
+    padding: 12px 22px;
+  }
+  .top__block-text {
+    margin-bottom: 55px;
+  }
+  .header__nav {
+    padding: 29px 0;
+  }
+  .burger-menu {
+    width: 50px;
+    height: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    background-color: transparent;
+    border: none;
+    z-index: 11;
+  }
+  .burger-menu span {
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: #000;
+  }
+  .burger-content {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    width: 150px;
+    height: 100vh;
+    padding: 0 25px;
+    transform: translateX(100%);
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.4s;
+  }
+  .burger-content--active {
+    visibility: visible;
+    opacity: 1;
+    transform: translateX(0);
+    z-index: 10;
+    transition: all 0.4s;
+  }
+  .header__nav-list {
+    flex-direction: column;
+  }
+  .makes__list {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(200px, 1fr));
+    gap: 22px;
+  }
+  .small__block {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+  .small__block-groups {
+    gap: 35px;
+  }
+  .benefits__content {
+    width: 100%;
+    margin: 0 auto;
+    color: #fff;
+  }
+  .footer__group {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+  }
+  .footer__content-title {
+    width: 150px;
+  }
+  .form__content {
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+  }
+}
+@media screen and (max-width: 540px) {
+  .top__block {
+    float: none;
+    width: 80%;
+    height: 334px;
+    padding: 30px 30px;
+    text-align: center;
+  }
+  .top__block-title {
+    font-size: 24px;
+  }
+  .small__block-groups {
+    padding: 34px;
+  }
+  .makes__list {
+    grid-template-columns: repeat(1, minmax(200px, 1fr));
+  }
+  .benefits {
+    height: 361px;
+  }
+  .benefits__form {
+    flex-direction: column;
+  }
+  .benefits__form-btn {
+    width: 90%;
+    font-size: 14px;
+    padding: 12px 22px;
+  }
+  .benefits__from-input {
+    width: 90%;
+    margin-bottom: 20px;
+  }
+  .footer__group-list {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px;
+  }
+  .footer__form {
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer__copyright {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .footer__copyright-text {
+    margin-bottom: 20px;
+  }
+  .top-catalog__contants {
+    flex-direction: column;
+    gap: 100px;
+    padding: 0 0 72px;
+  }
+  .top-catalog__contants-filter-block {
+    height: 100%;
+  }
+  .top-catalog__contants-filter-title {
+    cursor: pointer;
+    width: 150px;
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #2a254b;
+    border-radius: 9px;
+  }
+  .top-catalog__contants-filter-type,
+  .top-catalog__contants-filter-price,
+  .top-catalog__contants-filter-designer {
+    height: 0;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.4s;
+  }
+  .top-catalog__contants-filter-type--show,
+  .top-catalog__contants-filter-price--show,
+  .top-catalog__contants-filter-designer--show {
+    display: block;
+    opacity: 1;
+    height: 140px;
+    visibility: visible;
+    transition: all 0.4s;
+  }
+  .top-catalog__contants-list {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 36px 22px;
+  }
 }/*# sourceMappingURL=main.css.map */

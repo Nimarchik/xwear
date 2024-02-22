@@ -42,6 +42,7 @@ a {
 input {
 	outline: none;
 }
+
 $font-satoshi: 'Satoshi', sans-serif;
 $font-clashDisplay: 'Clash Display', sans-serif;
 $bg-color-purple: #2a254b;
@@ -60,10 +61,6 @@ h6 {
 p {
 	font-family: $font-satoshi;
 	font-weight: 400;
-}
-%titleSite {
-	font-size: 36px;
-	font-family: $font-satoshi;
 }
 
 .wrapper {

@@ -12,6 +12,7 @@
 
 		<link rel="stylesheet" href="../sass/main.css" />
 
+		<script src="../js/catalog.js" defer></script>
 		<script src="../js/preloader.js" defer></script>
 		<script src="../js/main.js" defer></script>
 	</head>
@@ -33,90 +34,97 @@
 								class="header__nav-img-one"
 							/>
 						</a>
-						<ul class="header__nav-list">
-							<li class="header__nav-item-two">
-								<a href="#" class="header__nav-link"> Plant pots </a>
-							</li>
-							<li class="header__nav-item">
-								<a href="#" class="header__nav-link"> Ceramics</a>
-							</li>
-							<li class="header__nav-item">
-								<a href="#" class="header__nav-link"> Tables</a>
-							</li>
-							<li class="header__nav-item">
-								<a href="#" class="header__nav-link"> Chairs</a>
-							</li>
-							<li class="header__nav-item">
-								<a href="#" class="header__nav-link"> Crockery</a>
-							</li>
-							<li class="header__nav-item">
-								<a href="#" class="header__nav-link"> Tableware</a>
-							</li>
-							<li class="header__nav-item">
-								<a href="#" class="header__nav-link"> Cutlery</a>
-							</li>
-						</ul>
+						<button class="burger-menu">
+							<span></span>
+							<span></span>
+							<span></span>
+						</button>
+						<div class="burger-content">
+							<ul class="header__nav-list">
+								<li class="header__nav-item-two">
+									<a href="#" class="header__nav-link"> Plant pots </a>
+								</li>
+								<li class="header__nav-item">
+									<a href="#" class="header__nav-link"> Ceramics</a>
+								</li>
+								<li class="header__nav-item">
+									<a href="#" class="header__nav-link"> Tables</a>
+								</li>
+								<li class="header__nav-item">
+									<a href="#" class="header__nav-link"> Chairs</a>
+								</li>
+								<li class="header__nav-item">
+									<a href="#" class="header__nav-link"> Crockery</a>
+								</li>
+								<li class="header__nav-item">
+									<a href="#" class="header__nav-link"> Tableware</a>
+								</li>
+								<li class="header__nav-item">
+									<a href="#" class="header__nav-link"> Cutlery</a>
+								</li>
+							</ul>
 
-						<ul class="header__nav-list-icon">
-							<li class="header__nav-item-icon">
-								<a href="#" class="header__nav-link-icon">
-									<input
-										type="search"
-										name="search"
-										class="header__nav-input"
-										id="header__nav-input-search"
-									/>
+							<ul class="header__nav-list-icon">
+								<li class="header__nav-item-icon">
+									<a href="#" class="header__nav-link-icon">
+										<input
+											type="search"
+											name="search"
+											class="header__nav-input"
+											id="header__nav-input-search"
+										/>
 
-									<svg
-										class="header__nav-svg"
-										xmlns="http://www.w3.org/2000/svg"
-										width="16"
-										height="16"
-										fill="currentColor"
-										class="bi bi-search"
-										viewBox="0 0 16 16"
-									>
-										<path
-											d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"
-										/>
-									</svg>
-								</a>
-							</li>
-							<li class="header__nav-item-icon">
-								<a href="#" class="header__nav-link-icon">
-									<svg
-										xmlns="http://www.w3.org/2000/svg"
-										width="16"
-										height="16"
-										fill="currentColor"
-										class="bi bi-cart3"
-										viewBox="0 0 16 16"
-									>
-										<path
-											d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l.84 4.479 9.144-.459L13.89 4zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"
-										/>
-									</svg>
-								</a>
-							</li>
-							<li class="header__nav-item-icon">
-								<a href="#" class="header__nav-link-icon">
-									<svg
-										xmlns="http://www.w3.org/2000/svg"
-										width="16"
-										height="16"
-										fill="currentColor"
-										class="bi bi-person-circle"
-										viewBox="0 0 16 16"
-									>
-										<path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0" />
-										<path
-											fill-rule="evenodd"
-											d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1"
-										/>
-									</svg>
-								</a>
-							</li>
-						</ul>
+										<svg
+											class="header__nav-svg"
+											xmlns="http://www.w3.org/2000/svg"
+											width="16"
+											height="16"
+											fill="currentColor"
+											class="bi bi-search"
+											viewBox="0 0 16 16"
+										>
+											<path
+												d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"
+											/>
+										</svg>
+									</a>
+								</li>
+								<li class="header__nav-item-icon">
+									<a href="#" class="header__nav-link-icon">
+										<svg
+											xmlns="http://www.w3.org/2000/svg"
+											width="16"
+											height="16"
+											fill="currentColor"
+											class="bi bi-cart3"
+											viewBox="0 0 16 16"
+										>
+											<path
+												d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l.84 4.479 9.144-.459L13.89 4zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"
+											/>
+										</svg>
+									</a>
+								</li>
+								<li class="header__nav-item-icon">
+									<a href="#" class="header__nav-link-icon">
+										<svg
+											xmlns="http://www.w3.org/2000/svg"
+											width="16"
+											height="16"
+											fill="currentColor"
+											class="bi bi-person-circle"
+											viewBox="0 0 16 16"
+										>
+											<path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0" />
+											<path
+												fill-rule="evenodd"
+												d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1"
+											/>
+										</svg>
+									</a>
+								</li>
+							</ul>
+						</div>
 					</nav>
 				</div>
 			</header>
@@ -129,187 +137,197 @@
 					<div class="container">
 						<div class="top-catalog__contants">
 							<div class="top-catalog__contants-filter">
-								<ul class="top-catalog__contants-filter-type">
-									<li class="top-catalog__contants-filter-type-item">
-										<h3 class="top-catalog__contants-filter-title">
-											Product type
-										</h3>
-									</li>
-									<li class="top-catalog__contants-filter-type-item">
-										<input
-											type="checkbox"
-											name=""
-											id="furniture"
-											class="top-catalog__contants-filter-checkbox"
-										/>
-										<label
-											for="furniture"
-											class="top-catalog__contants-filter-label"
-											>Furniture</label
-										>
-									</li>
-									<li class="top-catalog__contants-filter-type-item">
-										<input
-											type="checkbox"
-											name=""
-											id="homeware"
-											class="top-catalog__contants-filter-checkbox"
-										/>
-										<label
-											for="homeware"
-											class="top-catalog__contants-filter-label"
-											>Homeware</label
-										>
-									</li>
-									<li class="top-catalog__contants-filter-type-item">
-										<input
-											type="checkbox"
-											name=""
-											id="sofas"
-											class="top-catalog__contants-filter-checkbox"
-										/>
-										<label
-											for="sofas"
-											class="top-catalog__contants-filter-label"
-											>Sofas</label
-										>
-									</li>
-									<li class="top-catalog__contants-filter-type-item">
-										<input
-											type="checkbox"
-											name=""
-											id="light"
-											class="top-catalog__contants-filter-checkbox"
-										/>
-										<label
-											for="light"
-											class="top-catalog__contants-filter-label"
-											>Light fittings</label
-										>
-									</li>
-									<li class="top-catalog__contants-filter-type-item">
-										<input
-											type="checkbox"
-											name=""
-											id="accessories"
-											class="top-catalog__contants-filter-checkbox"
-										/>
-										<label
-											for="accessories"
-											class="top-catalog__contants-filter-label"
-											>Accessories</label
-										>
-									</li>
-								</ul>
+								<div class="top-catalog__contants-filter-block">
+									<h3
+										class="top-catalog__contants-filter-title"
+										data-title="type"
+									>
+										Product type
+									</h3>
+									<ul class="top-catalog__contants-filter-type">
+										<li class="top-catalog__contants-filter-type-item">
+											<input
+												type="checkbox"
+												name=""
+												id="furniture"
+												class="top-catalog__contants-filter-checkbox"
+											/>
+											<label
+												for="furniture"
+												class="top-catalog__contants-filter-label"
+												>Furniture</label
+											>
+										</li>
+										<li class="top-catalog__contants-filter-type-item">
+											<input
+												type="checkbox"
+												name=""
+												id="homeware"
+												class="top-catalog__contants-filter-checkbox"
+											/>
+											<label
+												for="homeware"
+												class="top-catalog__contants-filter-label"
+												>Homeware</label
+											>
+										</li>
+										<li class="top-catalog__contants-filter-type-item">
+											<input
+												type="checkbox"
+												name=""
+												id="sofas"
+												class="top-catalog__contants-filter-checkbox"
+											/>
+											<label
+												for="sofas"
+												class="top-catalog__contants-filter-label"
+												>Sofas</label
+											>
+										</li>
+										<li class="top-catalog__contants-filter-type-item">
+											<input
+												type="checkbox"
+												name=""
+												id="light"
+												class="top-catalog__contants-filter-checkbox"
+											/>
+											<label
+												for="light"
+												class="top-catalog__contants-filter-label"
+												>Light fittings</label
+											>
+										</li>
+										<li class="top-catalog__contants-filter-type-item">
+											<input
+												type="checkbox"
+												name=""
+												id="accessories"
+												class="top-catalog__contants-filter-checkbox"
+											/>
+											<label
+												for="accessories"
+												class="top-catalog__contants-filter-label"
+												>Accessories</label
+											>
+										</li>
+									</ul>
 
-								<ul class="top-catalog__contants-filter-price">
-									<li class="top-catalog__contants-filter-type-item">
-										<h3 class="top-catalog__contants-filter-title">Price</h3>
-									</li>
-									<li class="top-catalog__contants-filter-type-item">
-										<input
-											type="checkbox"
-											name=""
-											id="price1"
-											value="price1"
-											data-id="price1"
-											class="top-catalog__contants-filter-checkbox"
-										/>
-										<label
-											for="price1"
-											class="top-catalog__contants-filter-label"
-											>0-100</label
-										>
-									</li>
-									<li class="top-catalog__contants-filter-type-item">
-										<input
-											type="checkbox"
-											name=""
-											id="price2"
-											value="price2"
-											data-id="price2"
-											class="top-catalog__contants-filter-checkbox"
-										/>
-										<label
-											for="price2"
-											class="top-catalog__contants-filter-label"
-											>101-250</label
-										>
-									</li>
-									<li class="top-catalog__contants-filter-type-item">
-										<input
-											type="checkbox"
-											name=""
-											id="price3"
-											value="price3"
-											data-id="price3"
-											class="top-catalog__contants-filter-checkbox"
-										/>
-										<label
-											for="price3"
-											class="top-catalog__contants-filter-label"
-											>250+</label
-										>
-									</li>
-								</ul>
+									<h3
+										class="top-catalog__contants-filter-title"
+										data-title="price"
+									>
+										Price
+									</h3>
 
-								<ul class="top-catalog__contants-filter-price">
-									<li class="top-catalog__contants-filter-type-item">
-										<h3 class="top-catalog__contants-filter-title">Designer</h3>
-									</li>
-									<li class="top-catalog__contants-filter-price-item">
-										<input
-											type="checkbox"
-											name=""
-											id="smith"
-											class="top-catalog__contants-filter-checkbox"
-										/>
-										<label
-											for="smith"
-											class="top-catalog__contants-filter-label"
-											>Robert Smith</label
-										>
-									</li>
-									<li class="top-catalog__contants-filter-price-item">
-										<input
-											type="checkbox"
-											name=""
-											id="gallager"
-											class="top-catalog__contants-filter-checkbox"
-										/>
-										<label
-											for="gallager"
-											class="top-catalog__contants-filter-label"
-											>Liam Gallagher</label
-										>
-									</li>
-									<li class="top-catalog__contants-filter-price-item">
-										<input
-											type="checkbox"
-											name=""
-											id="smalls"
-											class="top-catalog__contants-filter-checkbox"
-										/>
-										<label
-											for="smalls"
-											class="top-catalog__contants-filter-label"
-											>Biggie Smalls</label
-										>
-									</li>
-									<li class="top-catalog__contants-filter-price-item">
-										<input
-											type="checkbox"
-											name=""
-											id="yorke"
-											class="top-catalog__contants-filter-checkbox"
-										/>
-										<label
-											for="yorke"
-											class="top-catalog__contants-filter-label"
-											>Thom Yorke</label
-										>
-									</li>
-								</ul>
+									<ul class="top-catalog__contants-filter-price">
+										<li class="top-catalog__contants-filter-type-item">
+											<input
+												type="checkbox"
+												name=""
+												id="price1"
+												value="price1"
+												data-id="price1"
+												class="top-catalog__contants-filter-checkbox"
+											/>
+											<label
+												for="price1"
+												class="top-catalog__contants-filter-label"
+												>0-100</label
+											>
+										</li>
+										<li class="top-catalog__contants-filter-type-item">
+											<input
+												type="checkbox"
+												name=""
+												id="price2"
+												value="price2"
+												data-id="price2"
+												class="top-catalog__contants-filter-checkbox"
+											/>
+											<label
+												for="price2"
+												class="top-catalog__contants-filter-label"
+												>101-250</label
+											>
+										</li>
+										<li class="top-catalog__contants-filter-type-item">
+											<input
+												type="checkbox"
+												name=""
+												id="price3"
+												value="price3"
+												data-id="price3"
+												class="top-catalog__contants-filter-checkbox"
+											/>
+											<label
+												for="price3"
+												class="top-catalog__contants-filter-label"
+												>250+</label
+											>
+										</li>
+									</ul>
+
+									<h3
+										class="top-catalog__contants-filter-title"
+										data-title="designer"
+									>
+										Designer
+									</h3>
+									<ul class="top-catalog__contants-filter-designer">
+										<li class="top-catalog__contants-filter-price-item">
+											<input
+												type="checkbox"
+												name=""
+												id="smith"
+												class="top-catalog__contants-filter-checkbox"
+											/>
+											<label
+												for="smith"
+												class="top-catalog__contants-filter-label"
+												>Robert Smith</label
+											>
+										</li>
+										<li class="top-catalog__contants-filter-price-item">
+											<input
+												type="checkbox"
+												name=""
+												id="gallager"
+												class="top-catalog__contants-filter-checkbox"
+											/>
+											<label
+												for="gallager"
+												class="top-catalog__contants-filter-label"
+												>Liam Gallagher</label
+											>
+										</li>
+										<li class="top-catalog__contants-filter-price-item">
+											<input
+												type="checkbox"
+												name=""
+												id="smalls"
+												class="top-catalog__contants-filter-checkbox"
+											/>
+											<label
+												for="smalls"
+												class="top-catalog__contants-filter-label"
+												>Biggie Smalls</label
+											>
+										</li>
+										<li class="top-catalog__contants-filter-price-item">
+											<input
+												type="checkbox"
+												name=""
+												id="yorke"
+												class="top-catalog__contants-filter-checkbox"
+											/>
+											<label
+												for="yorke"
+												class="top-catalog__contants-filter-label"
+												>Thom Yorke</label
+											>
+										</li>
+									</ul>
+								</div>
 							</div>
 
 							<div class="top-catalog__contants-list">

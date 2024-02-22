@@ -83,3 +83,42 @@
 	transform: translateY(-100%);
 	transition: all 0.5s;
 }
+
+.top-catalog__contants-filter-title {
+	margin-bottom: 10px;
+}
+.top-catalog__contants-filter-type,
+.top-catalog__contants-filter-price,
+.top-catalog__contants-filter-designer {
+	margin-bottom: 20px;
+}
+
+// .top-catalog__contants-filter-block {
+// 	height: 100%;
+// }
+// .top-catalog__contants-filter-title {
+// 	cursor: pointer;
+// 	width: 150px;
+// 	margin-bottom: 20px;
+// 	padding: 10px;
+// 	border: 1px solid $bg-color-purple;
+// 	border-radius: 9px;
+// }
+
+// .top-catalog__contants-filter-type,
+// .top-catalog__contants-filter-price,
+// .top-catalog__contants-filter-designer {
+// 	height: 0;
+// 	opacity: 0;
+// 	visibility: hidden;
+// 	transition: all 0.4s;
+// }
+// .top-catalog__contants-filter-type--show,
+// .top-catalog__contants-filter-price--show,
+// .top-catalog__contants-filter-designer--show {
+// 	display: block;
+// 	opacity: 1;
+// 	height: 140px;
+// 	visibility: visible;
+// 	transition: all 0.4s;
+// }
