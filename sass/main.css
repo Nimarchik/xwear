@@ -157,6 +157,15 @@ p {
   flex-grow: 1;
 }
 
+.burger-menu {
+  display: none;
+}
+
+.burger-content {
+  display: flex;
+  gap: 20px;
+}
+
 .header__nav-list {
   display: flex;
   align-items: center;
@@ -640,6 +649,7 @@ p {
 
 .top-catalog__contants {
   display: flex;
+  padding-bottom: 40px;
   gap: 169px;
 }
 
@@ -709,7 +719,65 @@ p {
 .top-catalog__contants-filter-type,
 .top-catalog__contants-filter-price,
 .top-catalog__contants-filter-designer {
-  margin-bottom: 20px;
+  margin-bottom: 25px;
+}
+
+.top-catalog__contants-link {
+  display: block;
+  width: 250px;
+  cursor: pointer;
+  margin: 20px auto 0;
+  padding: 10px 32px;
+  font-family: "Satoshi", sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  background-color: #dcdcdc;
+  border: none;
+  border-radius: 10px;
+  transition: all 0.3s;
+}
+.top-catalog__contants-link:hover {
+  color: #dcdcdc;
+  background-color: #000;
+  transition: all 0.3s;
+}
+
+.modals__brak {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 0;
+  height: 0;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.5);
+  visibility: hidden;
+  transition: all 0.2s;
+}
+
+.modals__brak--show {
+  width: 80vw;
+  height: 80vh;
+  box-shadow: 0 0 10px #dcdcdc;
+  visibility: visible;
+  transition: all 0.3s;
+}
+
+.modals__close {
+  cursor: pointer;
+  fill: #000;
+  float: right;
+  transition: all 0.4s;
+}
+.modals__close:hover {
+  fill: red;
+  filter: drop-shadow(0 0 5px red);
+  transition: all 0.4s;
+}
+
+.img__added {
+  width: 50px;
+  height: 50px;
 }
 
 @media screen and (max-width: 1280px) {

@@ -168,6 +168,14 @@ p {
 	flex-grow: 1;
 }
 
+.burger-menu {
+	display: none;
+}
+.burger-content {
+	display: flex;
+	gap: 20px;
+}
+
 .header__nav-list {
 	display: flex;
 	align-items: center;

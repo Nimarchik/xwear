@@ -9,13 +9,13 @@ document.body.onload = function () {
 		}
 	}, 1000)
 
-	// let timeId = setTimeout(function tick() {
-	// 	modalsAds.classList.add('ads-modals--show')
+	let timeId = setTimeout(function tick() {
+		modalsAds.classList.add('ads-modals--show')
 	
-	// 	modalsAdsClose.addEventListener('click', () => {
-	// 		modalsAds.classList.remove('ads-modals--show')
-	// 		timeId = setTimeout(tick, 60000)
-	// 	})
-	// }, 5000)
+		modalsAdsClose.addEventListener('click', () => {
+			modalsAds.classList.remove('ads-modals--show')
+			timeId = setTimeout(tick, 60000)
+		})
+	}, 5000)
 }
 
