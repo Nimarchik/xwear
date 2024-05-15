@@ -632,6 +632,120 @@ p {
   font-size: clamp(0.875rem, -0.625rem + 6vw, 1.25rem);
 }
 
+.nav__modals-reg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  width: 500px;
+  height: 500px;
+  padding: 25px;
+  border-radius: 9px;
+  background-color: #2a254b;
+  box-shadow: 0 0 10px #2a254b;
+  color: #fff;
+  transition: all 0.3s;
+}
+
+.nav__modals-reg--show {
+  transform: translate(-50%, -50%) scale(1);
+  transition: all 0.4s;
+}
+
+.opens,
+.nav__modals-reg-header-close {
+  cursor: pointer;
+}
+
+.nav__modals-reg-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.nav__modals-reg-title {
+  font-family: "Clash Display", sans-serif;
+  font-size: 25px;
+  font-weight: 700;
+}
+
+.nav__modals-reg-body-emal {
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.nav__modals-reg-pass,
+.nav__modals-reg-email {
+  position: relative;
+  width: 100%;
+  height: 40px;
+  padding-left: 15px;
+  background-color: transparent;
+  border: none;
+  border-radius: 10px;
+  border-bottom: 1px solid #f9f9f9;
+  color: #fff;
+  transition: all 0.4s;
+}
+.nav__modals-reg-pass:focus,
+.nav__modals-reg-email:focus {
+  box-shadow: 0 0 20px #fff, 0 10px 80px #858585, 0 20px 80px #3f3f3f;
+  transition: all 0.4s;
+}
+.nav__modals-reg-pass:focus + .input_Label-log,
+.nav__modals-reg-email:focus + .input_Label-log {
+  bottom: 100%;
+  transition: all 0.3s;
+}
+.nav__modals-reg-pass:focus + .input_Label-pass,
+.nav__modals-reg-email:focus + .input_Label-pass {
+  bottom: 100%;
+  transition: all 0.3s;
+}
+
+.input_Label-log,
+.input_Label-pass {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translate(-50%);
+  height: 20px;
+  transition: all 0.4s;
+}
+
+.nav__modals-reg-btn {
+  display: block;
+  padding: 10px 55px;
+  margin: 0 auto 20px;
+  background-color: #f9f9f9;
+  border: none;
+  font-size: 18px;
+  transition: all 0.2s;
+}
+.nav__modals-reg-btn:hover {
+  background-color: #2a254b;
+  border: 1px solid #858585;
+  color: #f9f9f9;
+  transition: all 0.4s;
+}
+
+.sign-in {
+  cursor: pointer;
+  display: block;
+  margin: 0 auto;
+  border: none;
+  color: rgba(255, 255, 255, 0.7);
+  background-color: transparent;
+  transition: all 0.3s;
+}
+.sign-in:hover {
+  color: white;
+  line-height: 1.2;
+  filter: drop-shadow(0 0 10px #fff);
+  transition: all 0.3s;
+}
+
 .top-catalog__contain {
   display: flex;
   align-items: end;
